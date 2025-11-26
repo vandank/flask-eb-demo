@@ -43,7 +43,7 @@ This project reflects real-world cloud engineering & DevOps practices.
 - Tracks visit count in the `/stats` endpoint  
 
 ###  Elastic Beanstalk
-- Python 3.11 platform on Amazon Linux 2023  
+- Python 3.12 platform on Amazon Linux 2023  
 - Handles EC2 provisioning, load balancing, scaling & deployments  
 - EB CLI used for configuration & deploy automation  
 
