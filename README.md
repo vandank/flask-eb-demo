@@ -103,7 +103,7 @@ Automated deployment pipeline that:
 CloudWatch Logs <── Streams application logs from EB
 
 ---
-## 📁 Project Structure
+##  Project Structure
 
 ```
 flask-eb-demo/
@@ -152,7 +152,7 @@ Variables used:
 
 ---
 
-## 🛠️ How to Deploy
+##  How to Deploy
 
 ### 1️⃣ Manual Deployment
 ```bash
