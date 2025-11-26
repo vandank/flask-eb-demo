@@ -65,7 +65,7 @@ This project reflects real-world cloud engineering & DevOps practices.
 ###  CI/CD (GitHub Actions)
 Automated deployment pipeline that:
 
-- Runs on push to `main`  
+- Runs on push to `master`  
 - Installs dependencies  
 - Configures AWS credentials  
 - Executes `eb deploy` automatically  
@@ -103,27 +103,25 @@ Automated deployment pipeline that:
 CloudWatch Logs <── Streams application logs from EB
 
 ---
+## 📁 Project Structure
 
-##  Project Structure
-
+```
 flask-eb-demo/
 │
-├── application.py # Flask routes + DB logic
-├── requirements.txt # Python dependencies
+├── application.py              # Flask routes + DB logic
+├── requirements.txt            # Python dependencies
 │
-├── templates/ # HTML templates
-│ ├── index.html
-│ ├── secret.html
-│ └── stats.html
+├── templates/                  # HTML templates
+│   ├── index.html
+│   ├── secret.html
+│   └── stats.html
 │
 ├── .ebextensions/
-│ └── 01-cloudwatch-logs.config # CloudWatch log streaming
+│   └── 01-cloudwatch-logs.config   # CloudWatch log streaming
 │
 └── .github/workflows/
-└── deploy.yml # CI/CD pipeline for EB deploy
-
-
----
+    └── deploy.yml              # CI/CD pipeline for EB deploy
+```
 
 ##  Application Endpoints
 
@@ -162,7 +160,7 @@ eb deploy
 ```
 ### 2️⃣ CI/CD Deployment
 
-Just push to main:
+Just push to master:
 
 git add .
 git commit -m "update"
@@ -178,7 +176,7 @@ GitHub Actions will automatically:
 
 ### CI/CD Pipeline (GitHub Actions)
 
-Workflow: .github/workflows/deploy.yml
+**Workflow: .github/workflows/deploy.yml**
 
 Includes:
 
@@ -199,7 +197,7 @@ You can view deployment logs under **GitHub → Actions.**
 ### Logging & Monitoring:
 #### CloudWatch Log Streaming
 Enabled through:
-.ebextensions/01-cloudwatch-logs.config
+**.ebextensions/01-cloudwatch-logs.config**
 
 Which activates:
 - /var/log/web.stdout.log
