@@ -1,5 +1,9 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
 
-# Elastic Beanstalk Files
+# Elastic Beanstalk
+# Ignore everything in .elasticbeanstalk except config.yml
 .elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+!.elasticbeanstalk/config.yml
