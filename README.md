@@ -133,7 +133,7 @@ flask-eb-demo/
 
 ---
 
-## 🔧 Environment Variables (Elastic Beanstalk)
+##  Environment Variables (Elastic Beanstalk)
 
 Set via:
 eb setenv KEY=value
