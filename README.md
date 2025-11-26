@@ -108,19 +108,19 @@ CloudWatch Logs <── Streams application logs from EB
 ```
 flask-eb-demo/
 │
-├── application.py              # Flask routes + DB logic
-├── requirements.txt            # Python dependencies
+├── application.py # Flask routes + DB logic
+├── requirements.txt # Python dependencies
 │
-├── templates/                  # HTML templates
-│   ├── index.html
-│   ├── secret.html
-│   └── stats.html
+├── templates/ # HTML templates
+│ ├── index.html
+│ ├── secret.html
+│ └── stats.html
 │
 ├── .ebextensions/
-│   └── 01-cloudwatch-logs.config   # CloudWatch log streaming
+│ └── 01-cloudwatch-logs.config # CloudWatch log streaming
 │
 └── .github/workflows/
-    └── deploy.yml              # CI/CD pipeline for EB deploy
+└── deploy.yml # CI/CD pipeline for EB deploy
 ```
 
 ##  Application Endpoints
